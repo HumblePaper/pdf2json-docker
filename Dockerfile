@@ -28,4 +28,4 @@ ENV PATH /usr/local/go/bin:/go/bin:/usr/local/bin:$PATH
 #RUN wget --no-check-certificate https://github.com/LaSanta/pdf2image/archive/master.zip && mkdir pdf2image && unzip master.zip -d pdf2image && cd pdf2image && ./configure && make && make install 
 
 # a few extras - install xhtml2pdf and pydocs
-RUN pip install xhtml2pdf pydocx
+#RUN pip install xhtml2pdf pydocx

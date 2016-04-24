@@ -19,9 +19,9 @@ RUN export DEBIAN_FRONTEND=noninteractive && \
 
 RUN curl -s https://storage.googleapis.com/golang/go1.4.2.linux-amd64.tar.gz | tar -v -C /usr/local -xz
 
-ENV GOPATH /go
+ENV GOPATH /gobranch
 ENV GOROOT /usr/local/go
-ENV PATH /usr/local/go/bin:/go/bin:/usr/local/bin:$PATH
+ENV PATH /usr/local/go/bin:/go/bin:/usr/local/bin:/gobranch/bin:$PATH
 
 #RUN export DEBIAN_FRONTEND=noninteractive && sudo apt-get -y install libfreetype6-dev && apt-get install -y ghostscript apt-get install -y unzip
 

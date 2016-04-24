@@ -53,5 +53,8 @@ RUN curl -s https://storage.googleapis.com/golang/go1.4.2.linux-amd64.tar.gz | t
 ENV GOROOT /usr/local/go
 ENV PATH /usr/local/go/bin:/go/bin:/usr/local/bin:/gobranch/bin:$PATH
 
+go get gopkg.in/gographics/imagick.v2/imagick
+
+
 # a few extras - install xhtml2pdf and pydocs
 #RUN pip install xhtml2pdf pydocx
